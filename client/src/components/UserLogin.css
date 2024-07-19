@@ -1,14 +1,15 @@
-.login-container{
-    background-color: rgb(210, 210, 214);
+.login-container {
+    /* background-color: rgb(210, 210, 214); */
     max-width: 650px;
     padding: 50px;
-    margin-left: 300px;
-
+    margin-left: 100px;
 }
-.login-container h1{
+
+.login-container h1 {
     text-align: center;
 }
-.login-container button{
+
+.login-container button {
     height: 50px;
     color: white;
     width: 100px;
@@ -17,20 +18,90 @@
     background-color: rgb(13, 47, 196);
     border-color: white;
 }
-.login-container button:hover{
+
+.login-container button:hover {
     width: 110px;
     height: 55px;
 }
-.login-container input{
+
+.login-container input {
     height: 40px;
     border-radius: 10px;
-    width: 400px;
+    width: 300px;
 }
-.login-container input:hover{
-    width: 410px;
+
+.login-container input:hover {
+    width: 310px;
     height: 45px;
     font-size: larger;
 }
-.login-btn{
+
+.login-btn {
     padding: 40px;
+}
+
+/* Media query for devices with a max-width of 768px */
+@media (max-width: 768px) {
+    .login-container {
+        max-width: 100%;
+        padding: 30px;
+        margin-left: 50px;
+    }
+    
+    .login-container button {
+        height: 45px;
+        width: 90px;
+        font-size: medium;
+    }
+    
+    .login-container button:hover {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .login-container input {
+        height: 35px;
+        width: 250px;
+    }
+    
+    .login-container input:hover {
+        width: 260px;
+        height: 40px;
+        font-size: medium;
+    }
+}
+
+/* Media query for devices with a max-width of 520px */
+@media (max-width: 520px) {
+    .login-container {
+        max-width: 100%;
+        padding: 20px;
+        margin-left: 0;
+    }
+    
+    .login-container button {
+        height: 40px;
+        width: 80px;
+        font-size: small;
+    }
+    
+    .login-container button:hover {
+        width: 90px;
+        height: 45px;
+    }
+    
+    .login-container input {
+        height: 30px;
+        width: 200px;
+    }
+    
+    .login-container input:hover {
+        width: 210px;
+        height: 35px;
+        font-size: small;
+    }
+    
+    .login-btn {
+        padding: 20px;
+    }
 }

@@ -1,26 +1,29 @@
-
 .button {
-    width: 50%;
-    height: 50px;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 18px;
-    background-color: #34b7f1;
-    border-width: 0;
-    color: #fff;
-  }
-  
-  .textarea {
-    width: 60%;
-    height: 30px;
-    border-radius: 10px;
-    border-width: 0;
-    padding: 10px;
-    font-size: 18px;
-  }
-  .textContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
+  width: 30%;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #34b7f1;
+  border-width: 0;
+  color: #fff;
+}
+
+.textarea {
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  border-width: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  position: sticky;
+  bottom: 0;
+}

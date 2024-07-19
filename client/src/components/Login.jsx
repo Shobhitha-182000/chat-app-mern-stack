@@ -35,7 +35,7 @@ const Login = ({setUser}) => {
                         value={user}
                         onChange={(e) => setAUser(e.target.value)}
                     />
-                    <button className='btn-container' onClick={clickHandler}>Login</button>
+                    <button className='btn-container' onClick={handleUser}>Login</button>
                 </div>
             </form>
             

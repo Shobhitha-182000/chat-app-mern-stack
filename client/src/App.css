@@ -1,1 +1,21 @@
- 
+ .main-container{
+    border: 2px solid rgb(235, 229, 229);
+    max-height: 100%;
+    border-radius: 10px;
+    width: 60%;
+     margin-left:200px ;
+     margin-top: 50px;
+     background-color: rgb(228, 221, 221);
+ }
+ @media (max-width:520px) {
+    .main-container{
+        margin: 0;
+    }
+    
+ }
+ @media (max-width:1024px) {
+    .main-container{
+        margin: 0;
+    }
+    
+ }

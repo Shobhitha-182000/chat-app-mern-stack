@@ -2,7 +2,7 @@ import React from 'react'
 import {Avatar,Image} from 'antd'
 import InputText from './InputText'
 
-export const ChatBoxReciever = ({avatar,userName,message}) => {
+export const ChatBoxReciever = ({avatar,user,message}) => {
     return (
       <div style={{display:'flex',justifyContent:'flex-start',flexDirection:'row'}}>
           <Avatar
@@ -18,9 +18,9 @@ export const ChatBoxReciever = ({avatar,userName,message}) => {
                 preview={false}
                 />}
             />
-        <p style={{padding:20, backgroundColor:"#dcf8c6",borderRadius:10,maxWidth:100}}>
+        <p style={{padding:10, backgroundColor:"#dcf8c6",borderRadius:10,maxWidth:100,marginLeft:'20px'}}>
             <strong style={{fontSize:13}}>
-                {userName}
+                {user}
             </strong><br/>
             {message}
         </p>
@@ -29,9 +29,9 @@ export const ChatBoxReciever = ({avatar,userName,message}) => {
     )
   }
 
-export const ChatBoxSender = ({avatar,message,userName}) => {
+export const ChatBoxSender = ({avatar,message,user}) => {
   return (
-    <div style={{display:'flex',justifyContent:'flex-end',flexDirection:'row'}}>
+    <div  style={{display:'flex',justifyContent:'flex-end',flexDirection:'row'}}>
           <Avatar
             size={50}
             src={<Image
@@ -45,11 +45,11 @@ export const ChatBoxSender = ({avatar,message,userName}) => {
                 preview={false}
                 />}
             />
-        <p style={{padding:20, backgroundColor:"white",borderRadius:10,maxWidth:50}}>
+        <p style={{padding:10, backgroundColor:"white",borderRadius:10,maxWidth:120,marginRight:'30px' }}>
             <strong style={{fontSize:13}}>
-                {userName}
+                {user}
             </strong><br/>
-            {message}
+              {message} 
         </p>
          
       </div>
